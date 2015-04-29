@@ -40,43 +40,42 @@ Cloud = {
     
                   switch (cfg){
                      
-								   case "DROPBOX" :
-										ref = document.createElement('script');
-										ref.setAttribute("type","text/javascript");
-										ref.setAttribute("src", config.DropBox[1]);
-										ref.setAttribute("id", "dropboxjs");
-										ref.setAttribute("data-app-key", config.DropBox[0]);
+			case "DROPBOX" :
+			ref = document.createElement('script');
+			ref.setAttribute("type","text/javascript");
+			ref.setAttribute("src", config.DropBox[1]);
+			ref.setAttribute("id", "dropboxjs");
+			ref.setAttribute("data-app-key", config.DropBox[0]);
 										
 										
-								   break;
+			break;
 									 
-								   case "GOOGLEDRIVE" : 
-										ref = document.createElement('script');
-										//ref.setAttribute("type","text/javascript");
-										ref.setAttribute("src", config.GoogleDrive[1]);
+			case "GOOGLEDRIVE" : 
+			ref = document.createElement('script');
+			ref.setAttribute("src", config.GoogleDrive[1]);
 										
 			
-								   break;
+			break;
 								   
-								   case "ONEDRIVE" :
-										ref = document.createElement('script');
-										ref.setAttribute("type","text/javascript");
-										ref.setAttribute("id", "onedrive-js");
-										ref.setAttribute("src", config.OneDrive[1]);
-										ref.setAttribute("client-id", config.OneDrive[0]);
+			case "ONEDRIVE" :
+			ref = document.createElement('script');
+			ref.setAttribute("type","text/javascript");
+			ref.setAttribute("id", "onedrive-js");
+			ref.setAttribute("src", config.OneDrive[1]);
+			ref.setAttribute("client-id", config.OneDrive[0]);
 										
-								   break;
+			break;
 								   
-								   default		   : 
-										//IMPROVEMENT OF THIS PART IN LATER VERSION
-										ref  = '<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="a1jy330vpyki64r"></script>';
-										ref += '<script src="https://apis.google.com/js/platform.js" async defer></script>';
-										ref += '<script type="text/javascript" src="https://js.live.net/v5.0/OneDrive.js" id="onedrive-js" client-id="000000004C142703"></script>';
-								   break;
+			default		   : 
+			//IMPROVEMENT OF THIS PART IN LATER VERSION
+			ref  = '<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="a1jy330vpyki64r"></script>';
+			ref += '<script src="https://apis.google.com/js/platform.js" async defer></script>';
+			ref += '<script type="text/javascript" src="https://js.live.net/v5.0/OneDrive.js" id="onedrive-js" client-id="000000004C142703"></script>';
+			break;
                      
                    }                
                 
 			if (typeof ref!="undefined")
-										return document.getElementsByTagName("head")[0].appendChild(ref);
+			return document.getElementsByTagName("head")[0].appendChild(ref);
   }
 };
