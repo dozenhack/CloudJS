@@ -1,0 +1,32 @@
+{
+  "name"           :  "cloudjs",
+  "version"        :  "1.0",
+  "description"    :  "CloudJS is a simple File Sharing Based Client Library Which Help Your Visitors Save the file directly to their Cloud Storage. (e.g. OneDrive, Google Drive, Drop Box)",
+  "homepage"       :  "https://github.com/webmechanicx/CloudJS",
+  "repository"     :  {
+                         "type": "git",
+                         "url" : "https://github.com/webmechanicx/CloudJS.git"
+                      },
+  "keywords"       :  [
+                         "personal",
+                         "cloud",
+						 "cloudjs",
+						 "file share",
+						 "document share",
+                         "engine",
+                         "google drive",
+                         "dropbox",
+						 "one drive",
+						 "sky drive"
+                      ],
+  "author"         :  "Farhadur Rahim <webmechanicx@gmail.com>",
+  "contributors"   :  [
+                         "Mahfuzul Haque <dhack@dozenhack.com>"
+                      ],
+  "licenses"       :  ["MIT"],
+  "dependencies"   :  {},
+  "devDependencies":  {},
+  "scripts"        :  {
+                         "test": "jasmine spec"
+                      }
+}
